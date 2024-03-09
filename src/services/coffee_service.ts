@@ -4,3 +4,8 @@ export const getCoffee = (name = 'Latte') => {
     name,
     };
     };
+
+export const getCoffeeString = () => {
+    return 'I like coffee!';
+    
+};

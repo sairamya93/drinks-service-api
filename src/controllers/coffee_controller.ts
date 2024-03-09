@@ -5,3 +5,8 @@ const coffeeName  = req.query.coffeeName;
 const coffee = coffeeService.getCoffee(coffeeName as string);
 res.json(coffee).status(200);
 };
+
+export const getCoffeeString = async (req: Request,res: Response) => {
+    const coffee = coffeeService.getCoffeeString();
+    res.status(200).send(coffee)
+}   
